@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  width: 100%;
+  height: 90vh;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  background-color: dimgray;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.rightHeader,
+.leftHeader .textContainer {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  max-height: 7vh;
+  font-size: 4.3vh;
+}
+
+.leftHeader {
+  grid-column: 1 / span 1;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background-color: aliceblue;
+}
+.leftHeader .textContainer {
+  grid-column: span 1;
+}
+.leftHeader .textContainer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  font-weight: 600;
+}
+.leftHeader .textContainer p:nth-child(1) {
+  padding-right: 2em;
+}
+
+.leftHeader:hover,
+.rightHeader:hover {
+  background-color: dimgray;
+}
+.textContainer:hover,
+.rightHeader:hover {
+  color: white;
+}
+.rightHeader {
+  grid-column: span 1;
+  background-color: aliceblue;
+}
+.rightHeader p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0.5em;
+  padding-right: 1.5em;
+
+  font-weight: 600;
+}
+.rightHeader p:nth-child(3) {
+  margin-left: auto;
+  padding-top: 0.8em;
+  padding-right: 1.2em;
+  font-weight: 400;
+  font-size: 2.3vh;
+}
+section {
+  margin-top: 7vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50vh;
+}
+.contentBox {
+  grid-column: span 1;
+  grid-row: span 1;
+
+  display: grid;
+  grid-template-rows: 9fr 1fr;
+}
+.contentBox .contentBox_pic {
+  grid-row: span 1;
+  background-color: lightslategray;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contentBox:nth-child(odd) .contentBox_pic {
+  background-color: slategray;
+}
+.contentBox:nth-child(odd) .contentBox_pic:hover {
+  background-color: darkslategray;
+}
+.contentBox:hover {
+  border: 2px solid black;
+}
+
+.contentBox_pic:hover {
+  background-color: darkslategray;
+}
+
+.contentBox_title:hover {
+  background-color: rgb(75, 0, 130);
+  color: gainsboro;
+}
+
+#pic01 {
+  background-image: url(./imgs/img01.jpg);
+}
+#pic02 {
+  background-image: url(./imgs/img02.jpg);
+}
+#pic03 {
+  background-image: url(./imgs/img03.jpg);
+}
+#pic04 {
+  background-image: url(./imgs/img04.jpg);
+}
+#pic05 {
+  background-image: url(./imgs/img05.jpg);
+}
+#pic06 {
+  background-image: url(./imgs/img06.jpg);
+}
+#pic07 {
+  background-image: url(./imgs/img07.jpg);
+}
+#pic08 {
+  background-image: url(./imgs/img08.jpg);
+}
+#pic09 {
+  background-image: url(./imgs/img09.jpg);
+}
+#pic10 {
+  background-image: url(./imgs/img10.jpg);
+}
+#pic11 {
+  background-image: url(./imgs/img11.jpg);
+}
+#pic12 {
+  background-image: url(./imgs/img12.jpg);
+}
+#pic13 {
+  background-image: url(./imgs/img13.jpg);
+}
+#pic00 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16vh;
+}
+.contentBox_title {
+  grid-row: 2 / span 1;
+
+  display: flex;
+  align-items: center;
+
+  background-color: gainsboro;
+  font-size: 2.2vh;
+  font-weight: 600;
+  color: rgb(0, 49, 83);
+}
+#last {
+  order: 10;
+}
